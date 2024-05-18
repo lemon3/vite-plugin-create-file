@@ -27,5 +27,5 @@ jobs:
       - run: pnpm run build
       - uses: JS-DevTools/npm-publish@v3
         with:
-          dry-run: true
+          # dry-run: true
           token: ${{ secrets.NPM_TOKEN }}
