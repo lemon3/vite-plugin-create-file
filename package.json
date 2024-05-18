@@ -1,0 +1,35 @@
+{
+  "name": "vite-plugin-create-file",
+  "version": "0.1.0",
+  "description": "create additional files",
+  "author": "wolfgang jungmayer",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/vite-plugin-create-file.umd.js",
+  "module": "./dist/vite-plugin-create-file.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vite-plugin-create-file.js",
+      "require": "./dist/vite-plugin-create-file.umd.js"
+    }
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint 'src/**/*.js' || true",
+    "prettify": "prettier --write 'src/**/*.*'"
+  },
+  "private": false,
+  "devDependencies": {
+    "eslint": "^9.2.0",
+    "globals": "^15.2.0",
+    "prettier": "^3.2.5",
+    "vite": "^5.2.0"
+  }
+}
