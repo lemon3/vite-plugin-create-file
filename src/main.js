@@ -76,7 +76,18 @@ const Writer = (options) => {
 
         defaults.outDir = config.build.outDir;
         const setting = Object.assign({}, defaults, item);
-        writeFile(setting.content, setting.filename, setting.outDir);
+
+        let content;
+        if ('function' === typeof setting.content) {
+          content = setting.content.call(this, config);
+          if ('undefined' === typeof content) {
+            content = '';
+          }
+        } else {
+          content = setting.content;
+        }
+
+        writeFile(content, setting.filename, setting.outDir);
       });
     },
   };

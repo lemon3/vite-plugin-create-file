@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-create-file",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "create additional files",
   "author": "wolfgang jungmayer",
   "license": "MIT",
@@ -27,9 +27,9 @@
   },
   "private": false,
   "devDependencies": {
-    "eslint": "^9.2.0",
-    "globals": "^15.2.0",
-    "prettier": "^3.2.5",
-    "vite": "^5.2.0"
+    "eslint": "^9.5.0",
+    "globals": "^15.6.0",
+    "prettier": "^3.3.2",
+    "vite": "^5.3.1"
   }
 }
