@@ -2,7 +2,7 @@
 adds one or multiple files to your build (outDir) directory.
 
 ## usage
-### only one file written
+### create one file
 ```js
 import { defineConfig } from 'vite';
 import Writer from 'vite-plugin-create-file';
@@ -19,7 +19,7 @@ export default defineConfig({
 });
 ```
 
-### write multiple files
+### create multiple files
 use an array with objects ...
 ```js
 import { defineConfig } from 'vite';
